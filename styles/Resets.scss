@@ -1,0 +1,38 @@
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-weight: 500;
+  font-family: "Mark";
+  font-size: .8em;
+  & *::selection {
+    background-color: yellow;
+  }
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black; 
+}

@@ -1,0 +1,416 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './variables';
+
+// Modules
+@import './Resets.scss';
+@import './Header.module.scss';
+@import './Otf.module.scss';
+@import './SecondScreen.module.scss';
+@import './Scrolleable.module.scss';
+@import './Carousel.module.scss';
+
+body *::selection {
+  background-color: black !important;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: $mine;
+  color: white;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+.h-full {
+  height: calc(100% - #{$header});
+}
+
+.height-80 {
+  height: 80%;
+  margin: auto;
+}
+
+.height-100 {
+  height: 100%;
+  max-width: 100%;
+}
+
+.only-web-container {
+  @media screen and (max-width: $breakpoint-md) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.only-left-container {
+  @media screen and (max-width: $breakpoint-md) {
+    padding-right: 0px;
+  }
+}
+
+.only-right-container {
+  @media screen and (max-width: $breakpoint-md) {
+    padding-left: 0px;
+  }
+}
+
+.App {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.push-header {
+  margin-top: $header;
+  @include media(xs) {
+    margin-top: $header-mobile;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.btn-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $dodger;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background: none;
+  border-radius: 10px;
+  transition: $ease;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $white;
+    color: $pizazz;
+    border: 1px solid $white;
+  }
+}
+
+
+@for $i from 0 through 100 {
+  .w-#{$i} {
+    width: #{$i}#{'%'};
+  }
+}
+
+@for $i from 0 through 200 {
+  .hb-#{$i} {
+    height: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .wt-#{$i} {
+    width: #{$i}px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .o-#{$i} {
+    opacity: #{$i / 10};
+  }
+}
+
+@for $i from 1 through 4 {
+  .pl-#{$i} {
+    padding-left: #{$i * 8}px;
+  }
+}
+
+@for $i from 1 through length($colors) {
+  .bg-#{nth($colors, $i)} {
+    background-color: map-get($colorsMap, nth($colors, $i));
+  }
+
+  .c-#{nth($colors, $i)} {
+    color: map-get($colorsMap, nth($colors, $i));
+  }
+
+  @for $j from 1 through 50 {
+    .border-#{nth($colors, $i)}-#{$j} {
+      border: solid #{$j}px map-get($colorsMap, nth($colors, $i));
+    }
+  }
+
+  .c-hover-#{nth($colors, $i)} {
+    &:hover {
+      color: map-get($colorsMap, nth($colors, $i));
+    }
+  }
+
+  .border-color-#{nth($colors, $i)} {
+    border-color: map-get($colorsMap, nth($colors, $i)) !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .border-width-#{$i} {
+    border-width: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through length($sides) {
+  @for $j from 1 through 50 {
+    .border-#{nth($sides, $i)}-#{$j} {
+      border-#{map-get($sidesMap, nth($sides, $i))}: solid #{$j}px;
+    }
+
+    .border-#{$j} {
+      border: solid #{$j}px;
+    }
+  }
+
+  @for $j from 1 through 200 {
+    .m#{nth($sides, $i)}-#{$j} {
+      margin-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+    }
+  }
+
+  @for $j from 1 through 200 {
+    .p#{nth($sides, $i)}-#{$j} {
+      padding-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+    }
+  }
+}
+
+@for $i from 1 through 50 {
+  .border-tb-#{$i} {
+    border-top: solid #{$i}px;
+    border-bottom: solid #{$i}px;
+  }
+  .border-lr-#{$i} {
+    border-left: solid #{$i}px;
+    border-right: solid #{$i}px;
+  }
+}
+
+@for $j from 1 through 200 {
+  .m-#{$j} {
+    margin: #{$j}px;
+  }
+  .p-#{$j} {
+    margin: #{$j}px;
+  }
+}
+
+@for $i from 1 through 126 {
+  .f-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 1 through 110 {
+  .lh-#{$i} {
+    line-height: #{$i}px;
+  }
+}
+
+@for $i from 1 through 90 {
+  .z-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+@for $i from 1 through 200 {
+  .gap-#{$i} {
+    gap: #{$i}px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  @for $i from 1 through 126 {
+    .f-mobile-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through 90 {
+    .lh-mobile-#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through 90 {
+    .z-mobile-#{$i} {
+      z-index: #{$i};
+    }
+  }
+
+  @for $i from 1 through 90 {
+    .pb-mobile-#{$i} {
+      padding-bottom: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through length($colors) {
+    .c-mobile-#{nth($colors, $i)} {
+      color: map-get($colorsMap, nth($colors, $i));
+    }
+    @for $j from 1 through 50 {
+      .border-mobile-#{nth($colors, $i)}-#{$j} {
+        border: solid #{$j}px map-get($colorsMap, nth($colors, $i));
+      }
+    }
+  }
+
+  @for $i from 0 through 200 {
+    .hb-mobile-#{$i} {
+      height: #{$i}px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) and (min-width: $breakpoint-xs) {
+  @for $i from 1 through 126 {
+    .f-tablet-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through 90 {
+    .lh-tablet-#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through 90 {
+    .z-tablet-#{$i} {
+      z-index: #{$i};
+    }
+  }
+
+  @for $i from 1 through length($colors) {
+    .c-tablet-#{nth($colors, $i)} {
+      color: map-get($colorsMap, nth($colors, $i));
+    }
+  }
+
+  @for $i from 0 through 200 {
+    .hb-tablet-#{$i} {
+      height: #{$i}px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xs) {
+  @for $j from 1 through 200 {
+    .m-md-#{$j} {
+      margin: #{$j}px;
+    }
+    .p-md-#{$j} {
+      margin: #{$j}px;
+    }
+    .gap-md-#{$j} {
+      gap: #{$j}px;
+    }
+  }
+
+  @for $i from 1 through length($sides) {
+    @for $j from 1 through 200 {
+      .m#{nth($sides, $i)}-md-#{$j} {
+        margin-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+    @for $j from 1 through 200 {
+      .p#{nth($sides, $i)}-md-#{$j} {
+        padding-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  @for $j from 1 through 200 {
+    .m-lg-#{$j} {
+      margin: #{$j}px;
+    }
+    .p-lg-#{$j} {
+      margin: #{$j}px;
+    }
+    .gap-lg-#{$j} {
+      gap: #{$j}px;
+    }
+  }
+
+  @for $i from 1 through length($sides) {
+    @for $j from 1 through 200 {
+      .m#{nth($sides, $i)}-lg-#{$j} {
+        margin-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+    @for $j from 1 through 200 {
+      .p#{nth($sides, $i)}-lg-#{$j} {
+        padding-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  @for $j from 1 through 200 {
+    .m-xl-#{$j} {
+      margin: #{$j}px;
+    }
+    .p-xl-#{$j} {
+      margin: #{$j}px;
+    }
+    .gap-xl-#{$j} {
+      gap: #{$j}px;
+    }
+  }
+
+  @for $i from 1 through length($sides) {
+    @for $j from 1 through 200 {
+      .m#{nth($sides, $i)}-xl-#{$j} {
+        margin-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+    @for $j from 1 through 200 {
+      .p#{nth($sides, $i)}-xl-#{$j} {
+        padding-#{map-get($sidesMap, nth($sides, $i))}: #{$j}px;
+      }
+    }
+  }
+}
+
+.primary-btn {
+  background-color: $dodger !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $white !important;
+  font-size: 1.2em;
+  transition: $ease;
+  width: 100%;
+  &:hover {
+    background-color: $dodgerHover !important;
+  }
+}
+
+.secondary-btn {
+  background-color: $mine !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $white !important;
+  font-size: 1.2em;
+  transition: $ease;
+  width: 100%;
+  &:hover {
+    background-color: $mineHover !important;
+  }
+}

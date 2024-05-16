@@ -1,0 +1,23 @@
+.Scrolleable {
+    transition: all 0.3s ease;
+    overflow-y: clip;
+    .tablet-video {
+        height: 100%;
+        width: 50vw;
+        object-position: center;
+        object-fit: cover;
+        margin: auto;
+    }
+      .expanded .tablet-video {
+        width: 100vw;
+        border-radius: 0;
+      }
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: $white;
+        display: flex;
+        margin: auto;
+        border-radius: 50% 50% 0 0;
+    }
+}

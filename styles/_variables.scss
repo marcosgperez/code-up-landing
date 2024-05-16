@@ -1,0 +1,70 @@
+$dodger: #2196F3; // Principal - Este color puede ser tu color principal, ya que es vibrante y transmite confianza.
+$dodgerHover: #1565C0;
+$mine: #333333; // Secundario - El gris oscuro puede funcionar como un color secundario que aporta elegancia y modernidad.
+$mineHover: #4C4C4C;
+$black: #000000; // Secundario - El negro intenso también puede ser utilizado como color secundario para añadir contraste y elegancia, especialmente en elementos de diseño más destacados.
+$pear: #CDDC39; // Terciario - Este verde brillante puede ser utilizado de manera más selectiva, quizás para resaltar aspectos de innovación o frescura en tu marca. 
+$pearHover: #AFB42B;
+$pizazz: #FF8C00; // Terciario - El naranja suave puede ser utilizado como un color adicional y más destacado que el verde, pero aún así en un papel secundario para aportar un toque de energía.
+$pizazzHover: #D17E00;
+$white: #FFFFFF; //  Neutro - El blanco se utiliza generalmente como un color neutral para fondos y espacios en blanco, resaltando la simplicidad y claridad.
+$whiteHover: #F2F2F2;
+
+$colors: 'dodger', 'pear', 'mine', 'pipazz', 'white', 'black', 'dodgeHover', 'mineHover', 'pearHover', 'pizazzHover', 'whiteHover';
+
+$sides: 't', 'r', 'b', 'l';
+
+$transparent: transparent;
+$header: 80px;
+$header-mobile: 64px;
+$separator_lines: 140px;
+
+$ease: all 0.1s ease-in;
+
+$borderStyles: 'solid';
+
+$title: Montserrat;
+
+$colorsMap: (
+  'dodger': $dodger,
+  'pear': $pear,
+  'mine': $mine,
+  'pizazz': $pizazz,
+  'white': $white,
+  'black': $black,
+  'dodgeHover': $dodgerHover,
+  'mineHover': $mineHover,
+  'pearHover': $pearHover,
+  'pizazzHover': $pizazzHover,
+  'whiteHover': $whiteHover,
+);
+
+$sidesMap: (
+  't': 'top',
+  'r': 'right',
+  'b': 'bottom',
+  'l': 'left',
+);
+
+//////////// BREAKPOINTS ////////////
+$breakpoint-xs: 767px;
+$breakpoint-md: 991px;
+$breakpoint-lg: 1200px;
+
+@mixin media($media) {
+  @if $media == md {
+    @media only screen and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == xs {
+    @media only screen and (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media only screen and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

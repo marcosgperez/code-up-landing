@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Mark;
+  font-weight: 300;
+  src: url('fonts/mark/mark-light.woff2') format('woff2'),
+    url('fonts/mark/mark-light.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 400;
+  src: url('fonts/mark/mark-regular.woff2') format('woff2'),
+    url('fonts/mark/mark-regular.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 500;
+  src: url('fonts/mark/mark-book.woff2') format('woff2'),
+    url('fonts/mark/mark-book.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 600;
+  src: url('fonts/mark/mark-medium.woff2') format('woff2'),
+    url('fonts/mark/mark-medium.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 700;
+  src: url('fonts/mark/mark-bold.woff2') format('woff2'),
+    url('fonts/mark/mark-bold.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 800;
+  src: url('fonts/mark/mark-heavy.woff2') format('woff2'),
+    url('fonts/mark/mark-heavy.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: Mark;
+  font-weight: 900;
+  src: url('fonts/mark/mark-black.woff2') format('woff2'),
+    url('fonts/mark/mark-black.ttf') format('truetype');
+  font-display: block;
+}
