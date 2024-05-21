@@ -13,6 +13,11 @@ body *::selection {
   background-color: black !important;
 }
 
+.view {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   scroll-behavior: smooth;
   background: $mine;

@@ -6,7 +6,7 @@ const Main = () => {
       <Head>
         <title>Code Up - We code all</title>
       </Head>
-      <div>
+      <div className="view Main">
         <Otf />
       </div>
     </>
