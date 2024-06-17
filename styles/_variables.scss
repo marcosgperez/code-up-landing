@@ -9,8 +9,9 @@ $pizazz: #FF8C00; // Terciario - El naranja suave puede ser utilizado como un co
 $pizazzHover: #D17E00;
 $white: #FFFFFF; //  Neutro - El blanco se utiliza generalmente como un color neutral para fondos y espacios en blanco, resaltando la simplicidad y claridad.
 $whiteHover: #F2F2F2;
+$blackGrey: #191919;
 
-$colors: 'dodger', 'pear', 'mine', 'pipazz', 'white', 'black', 'dodgeHover', 'mineHover', 'pearHover', 'pizazzHover', 'whiteHover';
+$colors: 'dodger', 'pear', 'mine', 'pipazz', 'white', 'black', 'dodgeHover', 'mineHover', 'pearHover', 'pizazzHover', 'whiteHover', 'blackGrey';
 
 $sides: 't', 'r', 'b', 'l';
 
@@ -37,6 +38,7 @@ $colorsMap: (
   'pearHover': $pearHover,
   'pizazzHover': $pizazzHover,
   'whiteHover': $whiteHover,
+  'blackGrey' : $blackGrey
 );
 
 $sidesMap: (

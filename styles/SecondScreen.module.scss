@@ -1,12 +1,15 @@
 .second-screen {
-    .text-cont {
-        height: 50%;
-    }
-    video {
+    .card-container {
+        background-color: $blackGrey;
+        border-radius: 14px;
         height: 100%;
-        width: 100%;
-        object-position: center;
-        object-fit: cover;
-        margin: auto;
+        max-height: 450px;
+        .codi {
+            position: absolute;
+            top: 0;
+            left: -250px;
+            width: 400px;
+            animation: float 5s infinite;
+        }
     }
 }

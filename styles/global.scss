@@ -13,9 +13,26 @@ body *::selection {
   background-color: black !important;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(-12px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
 .view {
   display: flex;
   flex-direction: column;
+}
+
+.screen {
+  width: 100%;
+  height: calc(100vh - $header);
 }
 
 body {

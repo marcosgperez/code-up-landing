@@ -34,4 +34,13 @@
         z-index: 50;
         position: relative;
     }
+    .codi {
+        animation: float 5s infinite;
+    }
+    .btn-primary {
+        width: 200px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }

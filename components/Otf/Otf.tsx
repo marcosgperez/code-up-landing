@@ -73,10 +73,23 @@ const Otf = () => {
           <div className="blue"></div>
         </div>
       )}
-      <div className="container push-header">
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
-        <button className="d-flex btn btn-primary c-white">Look</button>
+      <div className="container h-100">
+        <div className="row h-100">
+          <div className="col-6 h-100 d-flex">
+            <div className="d-flex flex-column m-auto">
+              <div>
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div className="mt-4">
+                <button className="d-flex btn btn-primary c-white">Look</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 h-100">
+            <img className="h-100 d-flex m-auto codi" src='/images/06.png' alt="image" />
+          </div>
+        </div>
       </div>
     </div>
   );
