@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Otf from '@components/Otf/Otf';
 import SecondScreen from '@components/SecondScreen';
+import ThirdScreen from '@components/ThirdScreen';
 const Main = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Main = () => {
         <Otf />
       </div>
       <SecondScreen />
+      <ThirdScreen />
     </>
   );
 };

@@ -1,0 +1,44 @@
+.third-screen {
+    .card-solutions {
+        margin: 6px 12px;
+        border-radius: 15px;
+        width: 180px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .first-card {
+        border: 2px solid $pizazz;
+        transform: rotateZ(-8deg);
+        p {
+            color: $pizazz;
+            font-weight: bolder;
+        }
+    }
+    .second-card {
+        border: 2px solid $dodger;
+        transform: rotateZ(3deg);
+        p {
+            color: $dodger;
+            font-weight: bolder;
+        }
+    }
+    .third-card {
+        border: 2px solid $white;
+        transform: rotateZ(-5deg);
+        p {
+            color: $white;
+            font-weight: bolder;
+        }
+    }
+    .fourth-card {
+        border: 2px solid $pear;
+        transform: rotateZ(2deg);
+        p {
+            color: $pear;
+            font-weight: bolder;
+        }
+    }
+}
