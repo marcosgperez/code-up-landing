@@ -75,7 +75,7 @@ const Header = ({ responsive }) => {
                     <p>Portfolio</p>
                   </Link>
                 </li>
-                <li className="nav-item d-flex m-auto h-100">
+                <li className="nav-item d-flex m-auto">
                   <button className="btn-nav">
                     <p className="f-16">Contact</p>
                   </button>

@@ -36,11 +36,21 @@
     }
     .codi {
         animation: float 5s infinite;
+        height: 100vh;
     }
     .btn-primary {
         width: 200px;
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:$breakpoint-md){
+    .push-mobile-header {
+        margin-top: $header-mobile;
+    }
+    .codi {
+        height: 400px !important;
     }
 }

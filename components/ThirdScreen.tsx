@@ -6,7 +6,7 @@ const ThirdScreen = () => {
           <div className="d-flex">
             <h2><span className="bolder">Innovamos soluciones</span><br/> para tus proyectos</h2>
           </div>
-          <div className="d-flex w-100 justify-content-center">
+          <div className="d-flex w-100 justify-content-center f-20">
             <div className="">
               <div className="card-solutions first-card">
                 <div className="d-flex flex-column m-auto">
@@ -60,8 +60,8 @@ const ThirdScreen = () => {
             </div>
           </div>
           <div className="text-center d-flex justify-content-center">
-            <div className="d-flex">
-              <h3>Transformando <span>Visiones</span> en <span>Realidad</span></h3>
+            <div className="d-flex transformando-text">
+              <h3>Transformando <span className="visiones">Visiones</span> en <span className="realidad">Realidad</span></h3>
             </div>
           </div>
         </div>

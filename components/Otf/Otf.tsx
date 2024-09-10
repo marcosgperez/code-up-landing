@@ -58,36 +58,35 @@ const Otf = () => {
         overflow: "hidden"
       }}
     >
-      {!isMobile && (
-        <div
-          className="animation-container"
-          ref={ballRef}
-          style={{
-            position: "absolute",
-            left: position.x,
-            top: position.y,
-            transform: `rotate(${rotation}deg)`
-          }}
-        >
-          <div className="orange"></div>
-          <div className="blue"></div>
-        </div>
-      )}
-      <div className="container h-100">
+
+      <div
+        className="animation-container"
+        ref={ballRef}
+        style={{
+          position: "absolute",
+          left: position.x,
+          top: position.y,
+          transform: `rotate(${rotation}deg)`
+        }}
+      >
+        <div className="orange"></div>
+        <div className="blue"></div>
+      </div>
+      <div className="container h-100 push-mobile-header">
         <div className="row h-100">
-          <div className="col-6 h-100 d-flex">
-            <div className="d-flex flex-column m-auto">
+          <div className="col-xl-6 h-xl-100 d-flex">
+            <div className="d-flex flex-column m-xl-auto m-5">
               <div>
                 <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
               </div>
-              <div className="mt-4">
-                <button className="d-flex btn btn-primary c-white">Look</button>
+              <div className="mt-4 col-xl-4 col-12">
+                <button className="d-flex btn btn-primary c-white w-100">Look</button>
               </div>
             </div>
           </div>
-          <div className="col-6 h-100">
-            <img className="h-100 d-flex m-auto codi" src='/images/06.png' alt="image" />
+          <div className="col-xl-6 col-12">
+            <img className="d-flex m-auto codi" src='/images/06.png' alt="image" />
           </div>
         </div>
       </div>

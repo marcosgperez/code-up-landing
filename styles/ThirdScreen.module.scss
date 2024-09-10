@@ -2,8 +2,8 @@
     .card-solutions {
         margin: 6px 12px;
         border-radius: 15px;
-        width: 180px;
-        height: 230px;
+        width: 250px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -11,7 +11,7 @@
     }
     .first-card {
         border: 2px solid $pizazz;
-        transform: rotateZ(-8deg);
+        transform: rotateZ(-4deg);
         p {
             color: $pizazz;
             font-weight: bolder;
@@ -40,5 +40,22 @@
             color: $pear;
             font-weight: bolder;
         }
+    }
+    .transformando-text {
+        h3 {
+            font-weight: bolder;
+        }
+    }
+    .visiones {
+        background-color: #2195f373;
+        color: #2195f3;
+        border-radius: 6px;
+        padding: 4px;
+    }
+    .realidad {
+        background-color: #ff8c006b;
+        color: #ff8c00;
+        border-radius: 6px;
+        padding: 4px;
     }
 }
