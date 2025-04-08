@@ -59,7 +59,7 @@ const ThirdScreen = () => {
               </div>
             </div>
           </div>
-          <div className="text-center d-flex justify-content-center">
+          <div className="text-center d-flex justify-content-center mt-5">
             <div className="d-flex transformando-text">
               <h3>Transformando <span className="visiones">Visiones</span> en <span className="realidad">Realidad</span></h3>
             </div>

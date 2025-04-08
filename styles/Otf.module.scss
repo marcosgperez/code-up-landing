@@ -53,4 +53,12 @@
     .codi {
         height: 400px !important;
     }
+    .blue {
+        transition: all 0.1s ease;
+        animation: floating 10s ease-in-out infinite;
+    }
+    .orange {
+        transition: all 0.1s ease;
+        animation: floating 10s ease-in-out infinite;
+    }
 }
