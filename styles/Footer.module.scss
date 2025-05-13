@@ -1,0 +1,47 @@
+
+.footer {
+    padding: 2rem 0;
+}
+
+.footerContactItem {
+    // Styles for the container of icon + text if needed
+}
+
+.footerText {
+    font-size: 1.1rem; // Larger text
+    font-weight: 600;  // Bolder text
+    margin-left: 0.75rem;
+}
+
+.iconCircle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;         // Circle size
+    height: 30px;        // Circle size
+    border-radius: 50%;  // Makes it a circle
+    background-color: #0d6efd; // Bootstrap primary blue, or your preferred blue
+    color: white;        // Icon color (assuming white SVGs will be used)
+    font-weight: bold;   // For the placeholder text M/P
+    font-size: 0.9rem;   // For the placeholder text M/P
+}
+
+/* Specific icon styles if needed - e.g., if using background images */
+.mailIcon {
+    // background-image: url('/path/to/mail-icon.svg');
+    // background-size: 60%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+}
+
+.pinIcon {
+    // background-image: url('/path/to/pin-icon.svg');
+    // background-size: 60%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+}
+
+.footerLogo {
+    max-width: 150px; // Smaller logo
+    height: auto;
+}

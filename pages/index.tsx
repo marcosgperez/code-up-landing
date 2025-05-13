@@ -16,7 +16,7 @@ const Main = () => {
       </div>
       <SecondScreen />
       <ThirdScreen />
-      <PortfolioScreen />
+      {/* <PortfolioScreen /> */}
       <ContactContainer />
     </>
   );

@@ -2,8 +2,8 @@ const SecondScreen = () => {
   return (
     <>
       <div className="container second-screen screen view">
-        <div className="row justify-content-end h-100 p-5 ">
-          <div className="col-10 h-100 d-flex align-items-center">
+        <div className="row justify-content-end h-100">
+          <div className="col-10 h-100 d-flex align-items-center p-5">
             <div className="row p-0 m-0 justify-content-center card-container p-relative w-100">
               <div className="col-8 m-0 p-5 d-flex flex-column justify-content-between ">
                 <img className="codi" src="/images/03.png" alt="image" />
